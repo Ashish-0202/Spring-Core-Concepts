@@ -17,3 +17,10 @@ Some of the useful annotations used in the project:
 @Lazy : This will be used if we don't need to create an object of the beans which are not needed in the current execution
 
 @Scope : The scope of a bean defines the life cycle and visibility of that bean in the contexts we use it.
+
+@PostConstruct : Spring calls the methods annotated with @PostConstruct only once, just after the initialization of bean properties. Keep in mind that these methods will run even if there’s nothing to initialize.
+
+@PreDestroy : A method annotated with @PreDestroy runs only once, just before Spring removes our bean from the application context.
+
+To Explore More on the annotation please visit the official documentation site of springboot.
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#legal
